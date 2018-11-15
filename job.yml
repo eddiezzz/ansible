@@ -1,0 +1,6 @@
+
+- hosts: hk
+  become: true
+  user: root
+  roles:
+    - job

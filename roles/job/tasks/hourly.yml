@@ -1,0 +1,10 @@
+
+- name: crawl mp and articles 
+  cron:
+    name: "do crawl"
+    minute: "30"
+    hour: "6,22"
+    job: "cd /root/techwood/crawler/crawler/wechat/scripts && sh run.sh"
+  tags:
+    - crawltask
+
